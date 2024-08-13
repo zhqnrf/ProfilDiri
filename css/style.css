@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+
+:root {
+	--font-montserrat: font-family: 'Montserrat', sans-serif;
+}
+
+body {
+	background-image: linear-gradient(#7a9aa4, #f0fcfe);
+	height: 122vh;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+
+* {
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.main {
+	background-color: white;
+	height: auto;
+	width: 650px;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	left: 50%;
+	top: 60%;
+}
+
+.left {
+	background-color: #3b5960;
+	width: 200px;
+	height: 100%;
+	float: left;
+}
+
+.right {
+	width: 450px;
+	float: left;
+}
+
+.profile-img {
+	height: 180px;
+	width: 180px;
+	background-color: #ddd;
+	border-radius: 50%;
+	margin-bottom: 20px;
+	margin-left: 60px;
+	border: 10px solid #7a9aa4;
+}
+
+@keyframes rotate {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.profile-img:hover {
+	animation: rotate 5s linear infinite;
+}
+
+
+.profile-img img {
+	width: 100%;
+	border-radius: 50%;
+}
+
+.box-1 {
+	position: relative;
+	color: #f0fcfe;
+}
+
+#bio {
+	/* background-color: red; */
+	font-weight: 700;
+	font-family: var(--font-montserrat);
+	font-size: 24px;
+	color: #3b5960;
+}
+
+.heading {
+	background-color: #7a9aa4;
+	padding: 10px;
+	color: #3b5960;
+	text-align: left;
+	padding-left: 20px;
+	margin-right: -15px;
+}
+
+.heading::after {
+	content: '';
+	position: absolute;
+	width: 21px;
+	height: 18px;
+	background-color: #5f767c;
+	left: 191px;
+	top: 26px;
+	transform: rotate(56deg);
+	z-index: -1;
+}
+
+.p1 {
+	padding: 9px 10px;
+	font-size: 8px;
+}
+
+.icons1 {
+	font-size: 16px !important;
+	padding-right: 10px !important;
+	vertical-align: sub;
+}
+
+.skill-container {
+	width: 90%;
+	background-color: #7a9aa4;
+	margin: 0px 10px;
+	overflow: hidden;
+	/* Menyembunyikan konten yang melebihi container */
+}
+
+.skill {
+	text-align: right;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	color: white;
+	animation-name: moveSkill;
+	animation-duration: 2s;
+	/* Menambahkan animasi */
+}
+
+@keyframes moveSkill {
+	from {
+		width: 0%;
+	}
+}
+
+
+.html {
+	width: 30%;
+	background-color: white;
+}
+
+.css {
+	width: 40%;
+	background-color: white;
+}
+
+.js {
+	width: 10%;
+	background-color: white;
+}
+
+.jquery {
+	width: 15%;
+	background-color: white;
+}
+
+.web {
+	width: 75%;
+	background-color: white;
+}
+
+.gra {
+	width: 80%;
+	background-color: white;
+}
+
+.icons2 {
+	padding: 18px 10px;
+}
+
+.name-div {
+	padding: 86px 0px 10px 55px;
+	text-align: center;
+	letter-spacing: 3px;
+}
+
+.name-div h1 {
+	font-size: larger;
+	margin-bottom: 10px;
+}
+
+.box-2 {
+	padding: 0px 50px;
+	margin-top: 30px;
+}
+
+.p2 {
+	font-size: 10px;
+	font-weight: 300;
+	letter-spacing: 1px;
+	word-spacing: 2px;
+	line-height: 18px;
+	margin-top: 5px;
+}
+
+h2 {
+	font-size: 16px;
+	margin-bottom: 15px;
+}
+
+.icons3 {
+	vertical-align: bottom;
+	font-size: 21px !important;
+	color: #3b5960;
+}
+
+.p3 {
+	font-size: 13px;
+	word-spacing: 1px;
+	letter-spacing: 0px;
+	margin-top: 10px;
+}
+
+.p3 span {
+	color: #3b5960;
+	padding-left: 20px;
+}
+
+.alamat {
+	display: flex;
+	font-size: 12px;
+	text-align: left;
+	padding-left: 15px;
+	margin-top: 30px;
+	/* height: 100%; */
+}
+
+#alamat-lengkap {
+	font-size: smaller;
+}
+
+#alamat-line {
+	/* content: ""; */
+	height: 29px;
+	width: 2px;
+	margin: 0 5px;
+	background-color: black;
+}
+
+.skill-container {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	-ms-flex-align: initial;
+	width: 90%;
+	margin: 0px 10px;
+	overflow: hidden;
+}
+
+.slide-animation {
+	animation: slide 1s ease-in-out;
+}
+
+@keyframes slide {
+	0% {
+		transform: translateX(-70%);
+	}
+
+	100% {
+		transform: translateX(0);
+	}
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
